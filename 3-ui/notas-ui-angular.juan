@@ -1,0 +1,26 @@
+
+
+sass
+
+____
+
+.sass    --whitespace-sensitive
+.scss      identico a csss salvo por caracterisitcas de sass variables etc
+
+añadir sasss al proyecto
+
+
+ng set defaults.styleExt scss
+
+en .angular-cli.json
+_______________________
+
+  "styles" : [
+      "styles.scss"
+  ]
+
+cambiarlo en terminal
+________________________
+
+mv ./src/styles.css ./src/styles.scss
+mv ./src/app/app.component.css ./src/app/app.component.scss
