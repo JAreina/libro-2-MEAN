@@ -1,0 +1,58 @@
+
+    .angular-cli.json
+ --------------------------------
+
+     configuración de angular cli del proyecto
+
+
+     comandos: get y set
+
+
+       LEER
+      - ng get project.name
+        ESCRIBIR
+
+        ng set project.name=nuevoNombre
+
+
+----------------------------
+GENERATORS ANGULAR-CLI
+  _________________________________
+
+
+   ng new --prefix jareina nombreProyecto
+
+
+    componente
+    ------------------
+    ng g component nombreComponente
+    ng generete component nombreComponente
+
+    ----------------------------------------------
+    Blueprint Angular-CLI
+     ***********************
+    Component   --->  ng generate component my-new-component
+      Directive  ---> ng generate directive my-new-directive
+    Pipe  ---> ng generate pipe my-new-pipe
+    Service  ---> ng generate service my-new-service
+    Class  --->  ng generate class my-new-class
+    Guard  ---> ng generate guard my-new-guard
+    Interface  ---> ng generate interface my-new-interface
+    Enum  ---> ng generate enum my-new-enum
+    Module  ---> ng generate module my-module
+
+
+
+    ******************************************
+
+
+
+
+
+capitulo 2     ----------   user interfaces
+
+
+
+
+
+    ........................
