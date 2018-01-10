@@ -4,12 +4,19 @@ import {RouterModule} from "@angular/router";
 import {PostsComponent} from "./posts.component";
 import {PostComponent} from "./post/post.component";
 
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
 
 // estrategia de precarga load children
 const ROUTES = [{
   path: "posts",
   component: PostsComponent,
-  loadChildren: "posts/posts.module#postModule"
+  children: [
+    {
+      path: ":id",
+      component: PostComponent
+    }
+  ]
   
 }, {
   path: "posts/:id",
@@ -19,7 +26,8 @@ const ROUTES = [{
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forChild(ROUTES)
+    RouterModule.forChild(ROUTES),
+    NgbModule
   ],
   declarations: [
     PostsComponent,

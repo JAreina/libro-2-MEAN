@@ -1,6 +1,48 @@
-<p>
-  posts works!
-</p>
+<div class="row">
+  <div class="col-3 col-sm-12">
+  <p>Sidebar</p>
+  </div>
+  <div class="col-9 col-sm-12">
+  <h3>Blog Posts</h3>
+  <p>Blog Post 1</p>
+  <p>Blog Post 2</p>
+  <p>Blog Post 3</p>
+  </div>
+  </div>
+
+
+
+  <ngb-accordion activeIds="ngb-panel-0">
+    <ngb-panel title="Matt DeLucas">
+    <ng-template ngbPanelContent>
+    <ul class="list-unstyled">
+    <li>Post 1</li>
+    <li>Post 2</li>
+    <li>Post 3</li>
+    </ul>
+    </ng-template>
+    </ngb-panel>
+    <ngb-panel title="Brandon Bittner">
+    <ng-template ngbPanelContent>
+    <ul class="list-unstyled">
+    <li>Post 4</li>
+    <li>Post 5</li>
+    <li>Post 6</li>
+    </ul>
+    </ng-template>
+    </ngb-panel>
+    <ngb-panel title="Mallory Moore">
+    <ng-template ngbPanelContent>
+    <ul class="list-unstyled">
+    <li>Post 7</li>
+    <li>Post 8</li>
+    <li>Post 9</li>
+    </ul>
+    </ng-template>
+    </ngb-panel>
+    </ngb-accordion>
+
+
 <div class="rutas">
   <router-outlet></router-outlet>
 </div>

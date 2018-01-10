@@ -9,7 +9,7 @@ import {PostComponent} from "./post/post.component";
 const ROUTES = [{
   path: "posts",
   component: PostsComponent,
-  loadChildren: "posts/posts.module#postModule"
+  loadChildren: "./posts/posts.module#postModule"
   
 }, {
   path: "posts/:id",

@@ -10,6 +10,7 @@ import { HomeComponent } from './componentes/home/home.component';
 import { PageNotFoundComponent } from './componentes/page-not-found/page-not-found.component';
 
 import {PostsModule} from "./componentes/posts/posts.module";
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {PostsModule} from "./componentes/posts/posts.module";
     BrowserModule,
 
     RutasRoutingModule ,FormsModule,
-    PostsModule   // PostComponente, y PostsComponente
+    PostsModule,   // PostComponente, y PostsComponente
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

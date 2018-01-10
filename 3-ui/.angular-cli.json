@@ -21,6 +21,11 @@
       "styles": [
         "styles.scss"
       ],
+      "stylePreprocessorOptions": {
+"includePaths": [
+"styles/variables"
+]}
+,
       "scripts": [],
       "environmentSource": "environments/environment.ts",
       "environments": {
