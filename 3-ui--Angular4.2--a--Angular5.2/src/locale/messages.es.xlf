@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="45a4b797ab6931fb10ed4ad33c49a77582db3db8" datatype="html">
+        <source>Inicio</source>
+        <target>Home</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <note priority="1" from="description">Inicio</note>
+      </trans-unit>
+      <trans-unit id="d5c73b3cf7fe880e38c987940cc2aff67a845280" datatype="html">
+        <source>Posts</source>
+        <target>Entradas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <note priority="1" from="description">colecciones de entradas</note>
+      </trans-unit>
+      <trans-unit id="34fb17abff50de7c3c660e9892b061bd4ffdbd7f" datatype="html">
+        <source>Autores</source>
+        <target>Authors</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <note priority="1" from="description">los autores de las entradas</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

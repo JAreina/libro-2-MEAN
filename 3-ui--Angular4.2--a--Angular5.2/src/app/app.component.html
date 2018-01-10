@@ -1,11 +1,26 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
 
-  <nav class="container-fluid">
-      <a routerLink="">Inicio</a>
-<a routerLink="/posts">Posts</a>
-<a routerLink="/autor">Authors</a>
+  <div class="container-fluid">
+
+
+      <nav class="navbar navbar-expand navbar-light bg-light">
+          <a class="navbar-brand" href="#">MEAN</a>
+          <ul class="navbar-nav">
+          <li class="nav-item">
+      <a class="nav-link" routerLink="" routerLinkActive="active" i18n="Inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+<a class="nav-link" routerLink="/posts" routerLinkActive="active" i18n="colecciones de entradas">Posts</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" routerLink="/autor" routerLinkActive="active" i18n="los autores de las entradas">Autores</a>
+</li>
+          </ul>
 </nav>
+
+</div>
+
 
 <div class="rutas container">
   <router-outlet></router-outlet>
