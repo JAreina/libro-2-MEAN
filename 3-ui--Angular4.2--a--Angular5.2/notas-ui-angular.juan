@@ -75,3 +75,14 @@ ng serve --aot --i18nFile=src/locale/messages.es.xlf --i18nFormat=xlf --locale=e
 JUST IN TIME
 
 -_______________--^
+
+
+
+ng eject \
+  --output-path=dist/en \
+  --aot \
+  -prod \
+  --bh /en/ \
+  --i18n-file=src/i18n/messages.en.xlf \
+  --i18n-format=xlf \
+  --locale=en

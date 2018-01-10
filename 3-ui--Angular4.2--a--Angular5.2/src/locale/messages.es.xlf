@@ -13,7 +13,7 @@
       </trans-unit>
       <trans-unit id="d5c73b3cf7fe880e38c987940cc2aff67a845280" datatype="html">
         <source>Posts</source>
-        <target>Entradas</target>
+        <target>ENTRADAS</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app.component.ts</context>
           <context context-type="linenumber">14</context>
@@ -22,7 +22,7 @@
       </trans-unit>
       <trans-unit id="34fb17abff50de7c3c660e9892b061bd4ffdbd7f" datatype="html">
         <source>Autores</source>
-        <target>Authors</target>
+        <target>AUTHORS</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app.component.ts</context>
           <context context-type="linenumber">17</context>
