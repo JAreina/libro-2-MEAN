@@ -60,7 +60,18 @@ messages.en.xi18n
 <target>Authors
 
 
+AHEAD OF TIME
+
+----------------------
+
+
 ng serve --aot --locale es --i18n-format xlf --i18n-file=src/locale/messages.es.xlf
 
 
 ng serve --aot --i18nFile=src/locale/messages.es.xlf --i18nFormat=xlf --locale=es
+
+
+
+JUST IN TIME
+
+-_______________--^
