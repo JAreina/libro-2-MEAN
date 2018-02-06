@@ -1,0 +1,88 @@
+
+
+sass
+
+____
+
+.sass    --whitespace-sensitive
+.scss      identico a csss salvo por caracterisitcas de sass variables etc
+
+añadir sasss al proyecto
+
+
+ng set defaults.styleExt scss
+
+en .angular-cli.json
+_______________________
+
+  "styles" : [
+      "styles.scss"
+  ]
+
+cambiarlo en terminal
+________________________
+
+mv ./src/styles.css ./src/styles.scss
+mv ./src/app/app.component.css ./src/app/app.component.scss
+
+
+
+----------------
+
+
+bootstrap 
+
+npm install bootstrap@4.0.0-alpha.6 --save
+
+para funcionalidad js de bootstrap
+
+npm install --save @ng-bootstrap/ng-bootstrap
+
+
+
+
+https://victorroblesweb.es/2017/11/02/actualizar-proyecto-angular-4-a-angular-5/
+
+
+
+
+
+
+
+INTERNALIZACIÓN i18n
+
+
+ng xi18n --output-path src/locale
+
+messages.en.xi18n
+
+
+<target>Authors
+
+
+AHEAD OF TIME
+
+----------------------
+
+
+ng serve --aot --locale es --i18n-format xlf --i18n-file=src/locale/messages.es.xlf
+
+
+ng serve --aot --i18nFile=src/locale/messages.es.xlf --i18nFormat=xlf --locale=es
+
+
+
+JUST IN TIME
+
+-_______________--^
+
+
+
+ng eject \
+  --output-path=dist/en \
+  --aot \
+  -prod \
+  --bh /en/ \
+  --i18n-file=src/i18n/messages.en.xlf \
+  --i18n-format=xlf \
+  --locale=en

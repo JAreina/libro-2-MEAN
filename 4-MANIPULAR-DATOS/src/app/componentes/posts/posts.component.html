@@ -1,0 +1,119 @@
+<div class="row">
+  <div class="col-3 col-sm-12">
+    <p>Sidebar</p>
+  </div>
+  <div class="col-9 col-sm-12">
+    <h3>Blog Posts</h3>
+    <p>PROBAR RUTA /posts/id</p>
+    <p>Blog Post 2</p>
+    <p>Blog Post 3</p>
+
+  </div>
+</div>
+
+
+
+<ngb-accordion activeIds="ngb-panel-01">
+  <ngb-panel title="Matt DeLucas">
+    <ng-template ngbPanelContent>
+      <ul class="list-unstyled">
+        <li>Post 1</li>
+        <li>Post 2</li>
+        <li>Post 3</li>
+      </ul>
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel title="Brandon Bittner">
+    <ng-template ngbPanelContent>
+      <ul class="list-unstyled">
+        <li>Post 4</li>
+        <li>Post 5</li>
+        <li>Post 6</li>
+      </ul>
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel title="Mallory Moore">
+    <ng-template ngbPanelContent>
+      <ul class="list-unstyled">
+        <li>Post 7</li>
+        <li>Post 8</li>
+        <li>Post 9</li>
+      </ul>
+    </ng-template>
+  </ngb-panel>
+</ngb-accordion>
+
+<div>FONT AWESOME</div>
+
+<ngb-accordion activeIds="ngb-panel-02">
+  <ngb-panel>
+    <ng-template ngbPanelTitle>
+      <strong>
+        <i class="fa fa-user"></i> Matt DeLucas</strong>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      <ul class="list-unstyled">
+        <li>
+          <i class="fa fa-newspaper-o"></i> Post 1</li>
+        <li>
+          <i class="fa fa-newspaper-o"></i> Post 2</li>
+        <li>
+          <i class="fa fa-newspaper-o"></i> Post 3</li>
+      </ul>
+    </ng-template>
+  </ngb-panel>
+</ngb-accordion>
+
+<!-- create-post-formulario -->
+
+<div class="row">
+  <div class="col-3">
+  <jareina-create-post-formulario></jareina-create-post-formulario>
+  <hr>
+  
+  </div>
+ </div>
+
+
+<!-- RUTAS -->
+<div class="rutas">
+  <router-outlet></router-outlet>
+</div>
+
+
+
+
+<!--  componente hijo post creator -->
+
+<jareina-post-creator (open)="open(modal)"></jareina-post-creator>
+
+<!-- sin el componente post creator 
+<div class="col-3">
+  <button (click)="open(modal)" class="btn btn-block btn-primary">
+    Create New Post
+  </button>
+
+</div>
+-->
+<!-- modal nuevo post -->
+
+<ng-template #modal let-c="close">
+  <div class="modal-header">
+    <h4 class="modal-title">New Post</h4>
+    <button type="button" class="close" aria-label="Close" (click)="c()">
+      cerrar
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-group">
+        <label for="formGroupExampleInput">Title</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="New Blog Post Title">
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="c()">Cancel</button>
+    <button type="button" class="btn btn-primary">Submit</button>
+  </div>
+</ng-template>

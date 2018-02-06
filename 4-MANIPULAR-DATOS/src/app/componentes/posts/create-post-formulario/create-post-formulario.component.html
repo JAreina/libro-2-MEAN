@@ -1,0 +1,30 @@
+<ng-template #modal let-c="close">
+  <div class="modal-header">
+    <h4 class="modal-title">New Post</h4>
+    <button type="button" class="close" aria-label="Close" (click)="c()">
+      CERRAR
+    </button>
+  </div>
+  <div class="modal-body">
+    <form #formID (ngSubmit)="submit()">
+      <div class="form-group">
+        <label for="formTitleInput">Title</label>
+        <input type="text" class="form-control" id="formTitleInput"
+        placeholder="New Blog Post Title" name="titulo" [(ngModel)]="titulo">
+      </div>
+      <div class="form-group">
+        <label for="formBodyInput">Content</label>
+        <textarea type="text" class="form-control" id="formBodyInput"
+         rows="6" placeholder="New Blog Content" name="contenido" [(ngModel)]="contenido">
+        </textarea>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="c()">Cancel</button>
+    <button type="button" class="btn btn-primary" (click)="submit();c()">Submit</button>
+  </div>
+</ng-template>
+<button (click)="open(modal)" class="btn btn-block btn-primary">
+Create New Post
+</button>
